@@ -36,13 +36,11 @@ public class Main {
 			} else if (input == 2) {
 				System.out.println("=======================");
 				System.out.println("계좌확인 메뉴입니다.");
-				System.out.println("아래에 이름과 계좌번호를 입력하세요.");
-				System.out.print("이름: ");
-				String name = scn.next();
+				System.out.println("계좌번호를 입력하세요.");
 				System.out.print("계좌번호: ");
 				int account = scn.nextInt();
 
-				bankSystem.retriveAccount(name, account);
+				bankSystem.retriveAccount(account);
 				
 			} else if (input == 3) {
 				System.out.println("=======================");
@@ -53,7 +51,7 @@ public class Main {
 				System.out.print("계좌번호: ");
 				int account = scn.nextInt();
 
-				bankSystem.retrieveBalance(name, account);
+				bankSystem.retrieveBalance(account);
 				
 			} else if (input == 4) {
 				System.out.println("=======================");
@@ -64,7 +62,7 @@ public class Main {
 				System.out.print("계좌번호: ");
 				int account = scn.nextInt();
 
-				bankSystem.deposit(name, account);
+				bankSystem.deposit(account);
 				
 			} else if (input == 5) {
 				System.out.println("=======================");
@@ -75,7 +73,7 @@ public class Main {
 				System.out.print("계좌번호: ");
 				int account = scn.nextInt();
 
-				bankSystem.withdraw(name, account);
+				bankSystem.withdraw(account);
 			}
 		}
 	}
